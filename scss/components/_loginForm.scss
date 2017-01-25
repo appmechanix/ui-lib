@@ -1,0 +1,20 @@
+@import "../common/colors";
+@import "../common/config";
+
+.loginform {
+  margin: 40px auto;
+
+  .social-list {
+    border-right: 1px solid $grey-border;
+
+    .social-item {
+      margin-bottom: 20px;
+      width: 95%;
+    }
+  }
+
+  .login-form {
+    width: 95%;
+    margin: 20px auto;
+  }
+}

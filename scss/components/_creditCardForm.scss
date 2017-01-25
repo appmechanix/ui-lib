@@ -1,0 +1,57 @@
+@import "../common/colors";
+@import "../common/config";
+
+.creditcardform {
+  border-radius: 10px;
+  padding: 20px 10px;
+
+  .creditcard-inner {
+    &:after {
+      visibility: hidden;
+      display: block;
+      font-size: 0;
+      content: " ";
+      clear: both;
+      height: 0;
+    }
+  }
+
+  .creditcard-number {
+    width: 100%;
+  }
+
+  .creditcard-expiry {
+    width: 50%;
+    float: left;
+    padding-top: 20px;
+
+    input {
+      width: 40%;
+      display: inline;
+      text-align: center;
+    }
+  }
+
+  .creditcard-cvc {
+    width: 50%;
+    float: left;
+    padding-top: 20px;
+    text-align: right;
+
+    label {
+      position: relative;
+      left: -42%;
+    }
+
+    input {
+      width: 50%;
+      text-align: center;
+
+      @media(max-width: $sm) {
+        width: 50%;
+      }
+
+      display: inline;
+    }
+  }
+}

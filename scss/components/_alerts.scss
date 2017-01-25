@@ -1,0 +1,54 @@
+@import "../common/colors";
+@import "../common/config";
+
+.alert {
+  padding: $input-padding;
+  border-radius: $input-border-radius;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  p {
+    line-height: 100%;
+    margin-bottom: 0;
+  }
+
+  ul {
+    li {
+      list-style-type: circle;
+      margin-left: 18px;
+      margin-top: 10px;
+    }
+  }
+
+  &.alert--success {
+    color: white;
+    background: $success-green;
+
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+
+  &.alert--info {
+    background: $info-colour;
+
+    a, .fa {
+      color: white;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  &.alert--errors {
+    color: #a94442;
+    background: $light-red;
+  }
+
+  &.alert--less-space {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
