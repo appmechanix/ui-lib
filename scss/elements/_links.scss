@@ -1,0 +1,11 @@
+@import "../common/colors";
+@import "../common/config";
+
+a {
+  color: $base-colour;
+  transition: all $menu-hover-speed;
+
+  &:hover {
+    color: $base-colour - 20;
+  }
+}
