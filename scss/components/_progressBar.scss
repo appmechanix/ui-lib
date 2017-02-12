@@ -1,0 +1,34 @@
+@import "../common/config";
+@import "../common/colors";
+
+.progress {
+  margin-bottom: 20px;
+  position: relative;
+
+  .progress-title {
+    margin-bottom: 10px;
+  }
+
+  .progress-bar {
+    background: #efefef;
+    width: 100%;
+    border-radius: $input-border-radius;
+
+    .bar {
+      max-width: 100%;
+      padding: $input-padding;
+      background: $base-colour;
+      border-bottom-left-radius: $input-border-radius;
+      border-top-left-radius: $input-border-radius;
+    }
+
+    p {
+      color: white;
+      position: absolute;
+      top: -11px;
+      text-align: center;
+      width: 100%;
+      height: 0;
+    }
+  }
+}

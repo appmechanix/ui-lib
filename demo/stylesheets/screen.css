@@ -335,6 +335,125 @@ a:hover {
   background: #333;
 }
 
+/* line 4, ../../scss/components/_checkbox.scss */
+.checkbox, .radio {
+  padding-left: 20px;
+}
+/* line 7, ../../scss/components/_checkbox.scss */
+.checkbox .help, .radio .help {
+  padding-left: 54px;
+}
+/* line 11, ../../scss/components/_checkbox.scss */
+.checkbox label, .radio label {
+  display: inline-block;
+  position: relative;
+  padding-left: 54px;
+  font-size: 20px;
+  padding-top: 0;
+}
+/* line 18, ../../scss/components/_checkbox.scss */
+.checkbox label::before, .radio label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 0;
+  margin-left: -20px;
+  border-radius: 3px;
+  border: 1px solid #333;
+  background-color: #fff;
+  text-align: center;
+  margin-top: 0;
+}
+/* line 33, ../../scss/components/_checkbox.scss */
+.checkbox label::after, .radio label::after {
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 0;
+  margin-left: -20px;
+  padding-left: 3px;
+  padding-top: 1px;
+  font-size: 11px;
+}
+
+/* line 49, ../../scss/components/_checkbox.scss */
+.radio label {
+  padding-bottom: 20px;
+}
+/* line 52, ../../scss/components/_checkbox.scss */
+.radio label:hover {
+  cursor: pointer;
+}
+/* line 57, ../../scss/components/_checkbox.scss */
+.radio input[type="radio"] {
+  display: none;
+}
+/* line 60, ../../scss/components/_checkbox.scss */
+.radio input[type="radio"]:checked + label::after {
+  font-family: 'FontAwesome';
+  content: "\f111";
+  font-size: 32px;
+  padding-left: 11px;
+  padding-top: 10px;
+}
+
+/* line 71, ../../scss/components/_checkbox.scss */
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+/* line 74, ../../scss/components/_checkbox.scss */
+.checkbox input[type="checkbox"]:checked + label::after {
+  font-family: 'FontAwesome';
+  content: "\f00c";
+  font-size: 48px;
+  padding-left: 3px;
+  padding-top: 4px;
+}
+/* line 82, ../../scss/components/_checkbox.scss */
+.checkbox input[type="checkbox"]:disabled + label {
+  opacity: 0.65;
+}
+/* line 85, ../../scss/components/_checkbox.scss */
+.checkbox input[type="checkbox"]:disabled + label::before {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+/* line 92, ../../scss/components/_checkbox.scss */
+.checkbox.checkbox-circle label::before {
+  border-radius: 50%;
+}
+/* line 96, ../../scss/components/_checkbox.scss */
+.checkbox.checkbox-inline {
+  margin-top: 0;
+}
+
+/* line 102, ../../scss/components/_checkbox.scss */
+.checkbox--smaller label, .radio--smaller label {
+  font-size: 16px;
+  padding-left: 16px;
+}
+/* line 106, ../../scss/components/_checkbox.scss */
+.checkbox--smaller label::before, .radio--smaller label::before {
+  width: 24px;
+  height: 24px;
+  margin-top: -5px;
+}
+/* line 114, ../../scss/components/_checkbox.scss */
+.checkbox--smaller input[type="radio"]:checked + label::after, .checkbox--smaller input[type="checkbox"]:checked + label::after, .radio--smaller input[type="radio"]:checked + label::after, .radio--smaller input[type="checkbox"]:checked + label::after {
+  font-size: 20px;
+  padding-top: 0;
+  margin-top: -1px;
+  padding-left: 6px;
+}
+/* line 122, ../../scss/components/_checkbox.scss */
+.checkbox--smaller input[type="checkbox"]:checked + label::after, .radio--smaller input[type="checkbox"]:checked + label::after {
+  padding-left: 4px;
+}
+
 /* line 4, ../../scss/components/_creditCardForm.scss */
 .creditcardform {
   border-radius: 10px;
@@ -407,4 +526,37 @@ a:hover {
 .loginform .login-form {
   width: 95%;
   margin: 20px auto;
+}
+
+/* line 4, ../../scss/components/_progressBar.scss */
+.progress {
+  margin-bottom: 20px;
+  position: relative;
+}
+/* line 8, ../../scss/components/_progressBar.scss */
+.progress .progress-title {
+  margin-bottom: 10px;
+}
+/* line 12, ../../scss/components/_progressBar.scss */
+.progress .progress-bar {
+  background: #efefef;
+  width: 100%;
+  border-radius: 3px;
+}
+/* line 17, ../../scss/components/_progressBar.scss */
+.progress .progress-bar .bar {
+  max-width: 100%;
+  padding: 15px;
+  background: #333;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+/* line 25, ../../scss/components/_progressBar.scss */
+.progress .progress-bar p {
+  color: white;
+  position: absolute;
+  top: -11px;
+  text-align: center;
+  width: 100%;
+  height: 0;
 }
